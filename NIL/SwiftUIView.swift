@@ -16,7 +16,7 @@ struct ContentView: View {
     @State private var age: String = ""
     @State private var showAgeDisclaimer: Bool = false
     
-    let textLimit = 5
+    let textLimit = 6
     let genderOptions = ["Male", "Female", "Non-Binary"]
     let activityLevelOptions = ["Light", "Moderate", "Intensive"]
     let ageOptions = ["50-55", "56-60", "61-65", "66-70", "71-75", "76-80", "81-85", "86-90", "90+"]
@@ -38,6 +38,11 @@ struct ContentView: View {
                                 .onChange(of: height) {
                                         self.height = String(height.prefix(textLimit))
                                     }
+                                .onChange(of: height, { oldValue, newValue in
+                                    if newValue != "" && Double(newValue) == nil {
+                                        height = oldValue
+                                    }
+                                })
                                 .lineLimit(1)
                             
                             Text("cm")
@@ -48,6 +53,14 @@ struct ContentView: View {
                             TextField("Weight", text: $weight)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.decimalPad)
+                                .onChange(of: weight) {
+                                        self.weight = String(weight.prefix(textLimit))
+                                    }
+                                .onChange(of: height, { oldValue, newValue in
+                                    if newValue != "" && Double(newValue) == nil {
+                                        height = oldValue
+                                    }
+                                })
                                 .lineLimit(1)
                             
                             Text("kg")
