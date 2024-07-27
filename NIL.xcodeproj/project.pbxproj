@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D98B99F32C38F3BD00E05900 /* NILApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B99F22C38F3BD00E05900 /* NILApp.swift */; };
-		D98B99F52C38F3BD00E05900 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B99F42C38F3BD00E05900 /* ContentView.swift */; };
 		D98B99F72C38F3BF00E05900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98B99F62C38F3BF00E05900 /* Assets.xcassets */; };
 		D98B99FA2C38F3BF00E05900 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98B99F92C38F3BF00E05900 /* Preview Assets.xcassets */; };
 		D98B9A042C38F3BF00E05900 /* NILTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B9A032C38F3BF00E05900 /* NILTests.swift */; };
 		D98B9A0E2C38F3BF00E05900 /* NILUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B9A0D2C38F3BF00E05900 /* NILUITests.swift */; };
 		D98B9A102C38F3BF00E05900 /* NILUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B9A0F2C38F3BF00E05900 /* NILUITestsLaunchTests.swift */; };
+		D9C371262C54A792002B79EC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C371252C54A792002B79EC /* SwiftUIView.swift */; };
+		D9C371282C54B55C002B79EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C371272C54B55C002B79EC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		D98B99EF2C38F3BD00E05900 /* NIL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B99F22C38F3BD00E05900 /* NILApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NILApp.swift; sourceTree = "<group>"; };
-		D98B99F42C38F3BD00E05900 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D98B99F62C38F3BF00E05900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D98B99F92C38F3BF00E05900 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D98B99FF2C38F3BF00E05900 /* NILTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NILTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		D98B9A092C38F3BF00E05900 /* NILUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NILUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B9A0D2C38F3BF00E05900 /* NILUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NILUITests.swift; sourceTree = "<group>"; };
 		D98B9A0F2C38F3BF00E05900 /* NILUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NILUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9C371252C54A792002B79EC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D9C371272C54B55C002B79EC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				D98B99F22C38F3BD00E05900 /* NILApp.swift */,
-				D98B99F42C38F3BD00E05900 /* ContentView.swift */,
+				D9C371272C54B55C002B79EC /* ContentView.swift */,
+				D9C371252C54A792002B79EC /* SwiftUIView.swift */,
 				D98B99F62C38F3BF00E05900 /* Assets.xcassets */,
 				D98B99F82C38F3BF00E05900 /* Preview Content */,
 			);
@@ -257,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98B99F52C38F3BD00E05900 /* ContentView.swift in Sources */,
 				D98B99F32C38F3BD00E05900 /* NILApp.swift in Sources */,
+				D9C371262C54A792002B79EC /* SwiftUIView.swift in Sources */,
+				D9C371282C54B55C002B79EC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
